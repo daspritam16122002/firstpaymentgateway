@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment gateway</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <hr>
+    <form action="">
+        <h1>Payment Gateway</h1>
+        <p>Required fields (*) are to be filled as compulsory</p>
+        <h3>General information</h3>
+        <p>Name:*<input type="text" name="Name" required></p>
+        <!-- here required attribute have to use to make compulsory box to fill -->
+        <p>Catagory: <input type="text" name="Name"></p>
+        <p>Ph no: <input type="text" name="Name"></p>
+        <fieldset>
+            <legend>Gender</legend>
+        <p>Male: <input type="radio" name="Gender" id="Gender"> 
+           Female: <input type="radio" name="Gender" id="Gemder">
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="Address" id="Address" cols="10" rows="5"></textarea></p>
+        <p>Mail: <input type="email" name="email" id="email"></p>
+        <p>Pincode: <input type="number" name="pincode" id="pincode"></p> 
+        <hr>
+        <h2>Payment information</h2>
+        <p>payment :
+        <select name="payment type" id="payment_type">
+            <option value="">--select your payment type--</option>
+            <option value="card">Card</option>
+            <option value="Upi">Upi</option>
+            <option value="Netbanking">Netbanking</option>
+        </select>
+        </p>
+        <p>
+            Card number <input type="number" name="card number" id="card number">
+        </p>
+        <p>
+            expiration date: <input type="date" name="expiration date" id="expiration date">
+        </p>
+        <p>
+            cvv: <input type="password" name="cvv" id="cvv">
+        </p>
+        <input type="submit" value="Pay now">
+    </form>
+    <hr>
+</body>
+</html>
